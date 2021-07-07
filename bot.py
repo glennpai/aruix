@@ -6,6 +6,9 @@ from dotenv import load_dotenv
 
 from commands.echo import *
 from commands.shuffle import *
+from commands.teams import *
+from commands.coin import *
+from commands.dice import *
 
 load_dotenv()
 
@@ -28,10 +31,18 @@ async def on_message(message):
         if message.content[0] == prefix:
             # $echo
             if message.content.split(' ')[0][1:] == 'echo':
-                await message.channel.send(echo())
+                await message.channel.send(echo(message))
 
-            # $shuffle
-            if message.content.split(' ')[0][1:] == 'shuffle':
-                await message.channel.send(shuffle())
+            # $teams
+            if message.content.split(' ')[0][1:] == 'teams':
+                await message.channel.send(teams(message))
+
+            # $coin
+            if message.content.split(' ')[0][1:] == 'coin':
+                await message.channel.send(coin(message))
+
+            # $dice
+            if message.content.split(' ')[0][1:] == 'dice':
+                await message.channel.send(dice(message))
 
 client.run(token)

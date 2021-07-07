@@ -1,2 +1,0 @@
-def shuffle():
-    return('shuffle')

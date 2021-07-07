@@ -1,5 +1,5 @@
 # Aruix
-#### Version 0.0.1
+#### Version 0.0.2
 
 ## Author
 * Christopher Glenn
@@ -7,7 +7,7 @@
 
 ## Purpose
 A semi-modular Discord.py bot that serves as a testing ground for anything and everything I want a bot to do. 
-I have had several iterations of Discord bots over time and wanted to create one flexible enough to drop in commands at a whim without writing monolithic code. 
+I have had several iterations of Discord bots over time and wanted to create one flexible enough to drop in commands at a whim without maintaining monolithic Python code. This bot is not focused on speed or performance but rather the ability to add and remove features in an instant.
 This project will primarily be a Discord.py bot but may eventually be ported to Discord.JS as another project.
 
 ## Disclaimer
@@ -32,3 +32,4 @@ commands/help.md (todo)
 * Create useful help docs
 * Dockerize
 * Implement skaffolding
+* Dynamically import modules in bot.py
