@@ -5,10 +5,10 @@ import discord
 from dotenv import load_dotenv
 
 from commands.echo import *
-from commands.shuffle import *
 from commands.teams import *
 from commands.coin import *
 from commands.dice import *
+from commands.irish import *
 
 load_dotenv()
 
@@ -44,5 +44,9 @@ async def on_message(message):
             # $dice
             if message.content.split(' ')[0][1:] == 'dice':
                 await message.channel.send(dice(message))
+
+            # $irish
+            if message.content.split(' ')[0][1:] == 'irish':
+                await message.channel.send(irish(message))
 
 client.run(token)
