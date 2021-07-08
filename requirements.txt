@@ -1,0 +1,3 @@
+##### Requirements -- No specified version #####
+discord.py
+python-dotenv
