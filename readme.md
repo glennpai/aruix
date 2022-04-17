@@ -1,4 +1,7 @@
 # Aruix
+## NOTE
+This bot is planned to be rewritten to use the new aruix-api. 
+
 #### Version 0.0.2
 
 ## Author
