@@ -1,0 +1,33 @@
+{
+  "name": "aruix",
+  "version": "2.0.0",
+  "description": "aruix discord bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "deploy": "node deploy-dev.js",
+    "deploy-prod": "echo \"TODO: No global deploy script exists\" && exit 1",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glennpai/aruix.git"
+  },
+  "author": "glennpai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glennpai/aruix/issues"
+  },
+  "homepage": "https://github.com/glennpai/aruix#readme",
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
